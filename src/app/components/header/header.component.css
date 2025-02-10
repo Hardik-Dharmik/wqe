@@ -1,0 +1,11 @@
+.small-icon {
+    --dim: 15px;
+    height: var(--dim) !important;
+    width: var(--dim) !important;
+    font-size: var(--dim) !important;
+}
+
+svg.social-icon {
+    fill: white;
+    cursor: pointer;
+}

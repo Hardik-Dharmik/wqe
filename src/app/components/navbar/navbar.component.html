@@ -1,0 +1,42 @@
+<nav class="px-12 py-3 flex justify-between items-center" *ngIf="!mobileQuery.matches">
+    <!-- logo  -->
+    <span class="flex items-center">
+        <img src="logo.png" alt="" class="h-10 w-12 md:h-14 md:w-18">
+        <div class="flex flex-col">
+            <span class="text-xl md:text-2xl kanit-semibold text-blue-400">WISDOM</span>
+            <span class="text-xs kanit-normal">Quality Education</span>
+        </div>
+    </span>
+
+    <span class="hidden md:flex gap-5">
+        <span href="#" class="text-base no-underline nav-link">Home</span>
+        <span href="#" class="text-base no-underline nav-link">About</span>
+        <span href="#" class="text-base no-underline nav-link">Courses</span>
+        <span href="#" class="text-base no-underline nav-link">Contact</span>
+    </span>
+</nav>
+
+<nav class="px-3 md:px-12 py-3 flex flex-col items-center relative" *ngIf="mobileQuery.matches">
+    <div class="flex justify-between items-center w-full">
+        <!-- logo  -->
+        <span class="flex items-center">
+            <img src="logo.png" alt="" class="h-10 w-12 md:h-14 md:w-18">
+            <div class="flex flex-col">
+                <span class="text-xl kanit-semibold text-blue-400">WISDOM</span>
+                <span class="hidden">Quality Education</span>
+            </div>
+        </span>
+
+        <mat-icon class="inline md:hidden" *ngIf="!isMenuOpen" (click)="isMenuOpen = true">menu</mat-icon>
+        <mat-icon class="inline md:hidden" *ngIf="isMenuOpen" (click)="isMenuOpen = false">close</mat-icon>
+    </div>
+
+    <span class="flex flex-col justify-center items-center gap-3 mt-2 absolute top-14 bg-white w-full"
+        *ngIf="isMenuOpen">
+        <span href="#" class="text-base no-underline nav-link">Home</span>
+        <span href="#" class="text-base no-underline nav-link">About</span>
+        <span href="#" class="text-base no-underline nav-link">Courses</span>
+        <span href="#" class="text-base no-underline nav-link">Contact</span>
+    </span>
+
+</nav>

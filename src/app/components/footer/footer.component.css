@@ -1,0 +1,16 @@
+.kanit-normal {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+svg.social-icon {
+    fill: white;
+    cursor: pointer;
+}
