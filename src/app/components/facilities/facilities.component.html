@@ -17,24 +17,34 @@
         }
     </div>
 
-    <div #counterSection class="col-span-full">
+    <div #counterSection class="hidden md:block col-span-full ">
         <div *ngIf="inView" class="counter flex mt-5 justify-evenly">
             <div class="flex flex-col  w-full items-center border-r ">
-                <h1 [countUp]="2000">0</h1>
+                <div class="flex">
+                    <h1 [countUp]="2000">0</h1>
+                    <h1>+</h1>
+                </div>
                 <p>Students</p>
             </div>
             <div class="flex flex-col  w-full items-center border-r">
-                <h1 [countUp]="6">0</h1>
+                <div class="flex">
+                    <h1 [countUp]="6">0</h1>
+                </div>
                 <p>Branches</p>
             </div>
             <div class="flex flex-col  w-full items-center border-r">
-                <h1 [countUp]="20">0</h1>
+                <div class="flex">
+                    <h1 [countUp]="20">0</h1>
+                    <h1>+</h1>
+                </div>
                 <p>Experience</p>
             </div>
             <div class="flex flex-col  w-full items-center">
-                <h1 class="inline" [countUp]="30">0</h1>
-                <h1 class="inline">+</h1>
-                <p>+ Instructors</p>
+                <div class="flex">
+                    <h1 [countUp]="30">0</h1>
+                    <h1>+</h1>
+                </div>
+                <p>Instructors</p>
             </div>
         </div>
     </div>

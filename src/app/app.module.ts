@@ -18,6 +18,12 @@ import { ClassesComponent } from './components/classes/classes.component';
 import { ClassCardComponent } from './components/classes/class-card/class-card.component';
 import { FacilitiesComponent } from './components/facilities/facilities.component';
 import { CountUpModule } from 'ngx-countup';
+import { TutorsComponent } from './components/tutors/tutors.component';
+import { TutorCardComponent } from './components/tutors/tutor-card/tutor-card.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
+import { BranchesComponent } from './components/contact/branches/branches.component';
+import { BranchCardComponent } from './components/contact/branches/branch-card/branch-card.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,13 @@ import { CountUpModule } from 'ngx-countup';
     HomeComponent,
     ClassesComponent,
     ClassCardComponent,
-    FacilitiesComponent
+    FacilitiesComponent,
+    TutorsComponent,
+    TutorCardComponent,
+    ContactComponent,
+    ContactFormComponent,
+    BranchesComponent,
+    BranchCardComponent
   ],
   imports: [
     MatIconModule,
