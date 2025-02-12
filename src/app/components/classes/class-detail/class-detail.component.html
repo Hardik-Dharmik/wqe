@@ -8,10 +8,15 @@
 
         <p style="margin-top:2rem;" class="text-base">{{class.description}}</p>
 
-        <button
-            class="flex items-center gap-2 mt-9 py-3 px-8 outline-gray-500 border hover:text-white hover:bg-blue-600">More
-            about {{class.standard}}
-            <mat-icon>arrow_right_alt</mat-icon></button>
+        <span class="text-base font-semibold">Subjects : </span>
+
+        <div class="inline-flex flex-wrap gap-3 mt-1">
+            @for (subject of class.subjects; track $index) {
+            <span class="bg-blue-300 text-gray-800 px-4 py-1.5 rounded-3xl">{{subject}}</span>
+            }
+        </div>
+
+
     </div>
 
     <img src="{{class.imgUrl}}" alt="Logo"
