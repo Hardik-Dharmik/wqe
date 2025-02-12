@@ -1,21 +1,21 @@
 <div
     class="p-4 appear-animation border-0 rounded-2xl bg-gray-100 hover:shadow-lg hover:scale-103 transition-transform duration-500">
     <div class="flex items-center gap-3">
-        <img src="logo.png" alt="class image" class="w-15 h-15 object-cover">
+        <span class="flex items-center rounded-full p-3" [ngClass]="class.iconBgColor">
+            <mat-icon class="class-card-icon">{{class.icon}}</mat-icon>
+        </span>
         <div class="flex flex-col">
-            <span class="text-lg font-semibold">State / CBSE</span>
-            <span class="text-sm">8th, 9th, 10th</span>
+            <span class="text-lg font-semibold">{{class.standard}}</span>
+            <span class="text-sm">{{class.type}}</span>
         </div>
     </div>
 
-    <p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, asperiores, numquam obcaecati
-        dolore
-        exercitationem minima dicta architecto explicabo, veritatis tempore atque. Iusto provident molestias corporis
-        eius error consequatur eum maxime.</p>
+    <p class="my-2 line-clamp-3">{{class.description}}</p>
 
     <hr>
 
     <div class="flex justify-between">
-        <button class="cursor-pointer text-sm text-violet-700 hover:underline">Details</button>
+        <a routerLink="/coursedetail" [state]="{class}"
+            class="cursor-pointer text-base !no-underline !text-violet-700 hover:!underline">Details</a>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tutor-card',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './tutor-card.component.css'
 })
 export class TutorCardComponent {
-
+  @Input() tutor: { imgUrl: string, name: string } = { imgUrl: "", name: "" };
 }

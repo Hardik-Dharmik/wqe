@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './tutors.component.css'
 })
 export class TutorsComponent {
-
+  tutors = [
+    { imgUrl: "deepak_sir.jpeg", name: "Deepak Sonkusare" },
+    { imgUrl: "nilesh_sir.jpeg", name: "Nilesh Dongaonkar" },
+    { imgUrl: "murtaza_sir.jpeg", name: "Murtaza Karanjawala" },
+    { imgUrl: "deepak_sir.jpeg", name: "Deepak Sonkusare" },
+  ]
 }

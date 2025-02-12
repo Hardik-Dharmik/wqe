@@ -6,12 +6,9 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-[3rem]">
-        <app-branch-card />
-        <app-branch-card />
-        <app-branch-card />
-        <app-branch-card />
-        <app-branch-card />
-        <app-branch-card />
+        @for (branch of branches; track $index) {
+        <app-branch-card [branch]="branch" />
+        }
     </div>
     <!-- <app-contact-form /> -->
 </section>

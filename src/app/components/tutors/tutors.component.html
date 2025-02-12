@@ -5,9 +5,8 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-5 mt-[3rem]">
-        <app-tutor-card />
-        <app-tutor-card />
-        <app-tutor-card />
-        <app-tutor-card />
+        @for (tutor of tutors; track $index) {
+        <app-tutor-card [tutor]="tutor" />
+        }
     </div>
 </section>

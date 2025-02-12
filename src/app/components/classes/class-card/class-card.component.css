@@ -1,0 +1,6 @@
+.class-card-icon {
+    --dim: 2rem;
+    height: var(--dim) !important;
+    width: var(--dim) !important;
+    font-size: var(--dim) !important;
+}

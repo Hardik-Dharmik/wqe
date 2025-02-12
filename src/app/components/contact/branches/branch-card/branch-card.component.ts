@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-branch-card',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './branch-card.component.css'
 })
 export class BranchCardComponent {
+  router = inject(Router);
+
+  @Input() branch: any;
+
+  goToBranchDetails() {
+    this.router.navigateByUrl('/location-detail', { state: this.branch });
+  }
 
 }

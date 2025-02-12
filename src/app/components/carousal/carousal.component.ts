@@ -15,7 +15,7 @@ export class CarousalComponent {
   // ]
 
   slides = [
-    "p1.jpg",
+    "result.jpeg",
     "p2.jpg",
     "p3.jpg"
   ]
@@ -24,7 +24,7 @@ export class CarousalComponent {
   timeoutId?: number;
 
   ngOnInit(): void {
-    this.resetTimer();
+    // this.resetTimer();
   }
   ngOnDestroy() {
     window.clearTimeout(this.timeoutId);
@@ -42,7 +42,7 @@ export class CarousalComponent {
       ? this.slides.length - 1
       : this.currentIndex - 1;
 
-    this.resetTimer();
+    // this.resetTimer();
     this.currentIndex = newIndex;
   }
 
@@ -50,12 +50,12 @@ export class CarousalComponent {
     const isLastSlide = this.currentIndex === this.slides.length - 1;
     const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
 
-    this.resetTimer();
+    // this.resetTimer();
     this.currentIndex = newIndex;
   }
 
   goToSlide(slideIndex: number): void {
-    this.resetTimer();
+    // this.resetTimer();
     this.currentIndex = slideIndex;
   }
 

@@ -24,6 +24,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ContactFormComponent } from './components/contact/contact-form/contact-form.component';
 import { BranchesComponent } from './components/contact/branches/branches.component';
 import { BranchCardComponent } from './components/contact/branches/branch-card/branch-card.component';
+import { ClassDetailComponent } from './components/classes/class-detail/class-detail.component';
+import { LocationDetailComponent } from './components/location-detail/location-detail.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,10 @@ import { BranchCardComponent } from './components/contact/branches/branch-card/b
     ContactComponent,
     ContactFormComponent,
     BranchesComponent,
-    BranchCardComponent
+    BranchCardComponent,
+    ClassDetailComponent,
+    LocationDetailComponent,
+    AboutUsComponent
   ],
   imports: [
     MatIconModule,

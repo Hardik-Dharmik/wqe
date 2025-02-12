@@ -8,9 +8,8 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-[3rem]">
-        <app-class-card />
-        <app-class-card />
-        <app-class-card />
-        <app-class-card />
+        @for (klass of classes; track $index) {
+        <app-class-card [class]="klass" />
+        }
     </div>
 </section>
