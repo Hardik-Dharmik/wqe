@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 import { MediaMatcher } from '@angular/cdk/layout';
+import { getImageUrl } from '../../constants/images.constant';
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +11,7 @@ import { MediaMatcher } from '@angular/cdk/layout';
 export class NavbarComponent {
   isMenuOpen = false;
   mobileQuery: MediaQueryList;
+  logoURL = getImageUrl('LOGO');
 
   private _mobileQueryListener: () => void;
 

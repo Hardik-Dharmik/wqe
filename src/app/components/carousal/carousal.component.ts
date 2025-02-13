@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getImageUrl } from '../../constants/images.constant';
 
 @Component({
   selector: 'app-carousal',
@@ -8,23 +9,17 @@ import { Component } from '@angular/core';
 })
 export class CarousalComponent {
 
-  // slides = [
-  //   "https://pixabay.com/photos/autumn-forest-trees-nature-sunset-6690466/",
-  //   "https://www.pexels.com/photo/silhouette-of-mountains-1323550/",
-  //   "https://www.pexels.com/photo/person-standing-on-grass-field-while-opening-hands-1583582/"
-  // ]
-
   slides = [
-    "result.jpeg",
-    "p2.jpg",
-    "p3.jpg"
+    getImageUrl('CAROUSAL_1'),
+    getImageUrl('CAROUSAL_2'),
+    getImageUrl('CAROUSAL_3'),
   ]
 
   currentIndex: number = 0;
   timeoutId?: number;
 
   ngOnInit(): void {
-    // this.resetTimer();
+    this.resetTimer();
   }
   ngOnDestroy() {
     window.clearTimeout(this.timeoutId);
@@ -33,7 +28,7 @@ export class CarousalComponent {
     if (this.timeoutId) {
       window.clearTimeout(this.timeoutId);
     }
-    this.timeoutId = window.setTimeout(() => this.goToNext(), 3000);
+    this.timeoutId = window.setTimeout(() => this.goToNext(), 4000);
   }
 
   goToPrevious(): void {
@@ -42,7 +37,7 @@ export class CarousalComponent {
       ? this.slides.length - 1
       : this.currentIndex - 1;
 
-    // this.resetTimer();
+    this.resetTimer();
     this.currentIndex = newIndex;
   }
 
@@ -50,12 +45,12 @@ export class CarousalComponent {
     const isLastSlide = this.currentIndex === this.slides.length - 1;
     const newIndex = isLastSlide ? 0 : this.currentIndex + 1;
 
-    // this.resetTimer();
+    this.resetTimer();
     this.currentIndex = newIndex;
   }
 
   goToSlide(slideIndex: number): void {
-    // this.resetTimer();
+    this.resetTimer();
     this.currentIndex = slideIndex;
   }
 

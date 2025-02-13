@@ -1,6 +1,6 @@
 <section
     class="bg-[#4A25A7] text-[#E4F1FE] grid grid-cols-1 px-12 py-20 md:grid-cols-2 justify-between content-center items-center justify-self-center appear-animation min-h-screen">
-    <img src="lecture.jpg" alt="Logo"
+    <img src="{{imgUrl}}" alt="Logo"
         class="hidden md:block rounded-2xl h-[15rem] w-[15rem] md:h-[25rem] md:w-[25rem] mx-auto ">
 
     <div class="p-3 md:p-10">
@@ -12,7 +12,7 @@
         @for (facility of facilities; track $index) {
         <p class="flex gap-2">
             <mat-icon>{{facility.icon}}</mat-icon>
-            <span>{{facility.text}}</span>
+            <span class="text-xl">{{facility.text}}</span>
         </p>
         }
     </div>

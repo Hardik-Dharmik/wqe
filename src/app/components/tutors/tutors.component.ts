@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { getImageUrl } from '../../constants/images.constant';
 
 @Component({
   selector: 'app-tutors',
@@ -8,9 +9,8 @@ import { Component } from '@angular/core';
 })
 export class TutorsComponent {
   tutors = [
-    { imgUrl: "deepak_sir.jpeg", name: "Deepak Sonkusare" },
-    { imgUrl: "nilesh_sir.jpeg", name: "Nilesh Dongaonkar" },
-    { imgUrl: "murtaza_sir.jpeg", name: "Murtaza Karanjawala" },
-    { imgUrl: "deepak_sir.jpeg", name: "Deepak Sonkusare" },
+    { imgUrl: getImageUrl('DEEPAK_SIR'), name: "Deepak Sonkusare" },
+    { imgUrl: getImageUrl("NILESH_SIR"), name: "Nilesh Dongaonkar" },
+    { imgUrl: getImageUrl("MURTAZA_SIR"), name: "Murtaza Karanjawala" },
   ]
 }

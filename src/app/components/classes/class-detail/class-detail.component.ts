@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { map, Observable, pluck } from 'rxjs';
+import { map, Observable, pluck, tap } from 'rxjs';
 import { Class } from '../../../services/class.service';
 
 @Component({
@@ -17,7 +17,7 @@ export class ClassDetailComponent {
 
   ngOnInit() {
     this.state$ = this.activatedRoute.paramMap
-      .pipe(map(() => window.history.state), pluck('class'));
+      .pipe(map(() => window.history.state), pluck('class'), tap(console.log));
 
     this.state$.subscribe(data => this.class = data as Class);
   }

@@ -6,6 +6,7 @@ import { ClassesComponent } from './components/classes/classes.component';
 import { ClassDetailComponent } from './components/classes/class-detail/class-detail.component';
 import { LocationDetailComponent } from './components/location-detail/location-detail.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'location-detail',
         component: LocationDetailComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
       },
     ]
   }

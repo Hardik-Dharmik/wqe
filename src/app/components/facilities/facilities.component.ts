@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { getImageUrl } from '../../constants/images.constant';
 
 @Component({
   selector: 'app-facilities',
@@ -7,6 +8,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrl: './facilities.component.css',
 })
 export class FacilitiesComponent {
+  imgUrl = getImageUrl('FACILITIES');
   facilities = [
     { text: "Expericed Teachers", icon: "groups" },
     { text: "E-learning on Smart-Board", icon: "laptop_mac" },

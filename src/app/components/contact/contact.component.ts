@@ -23,26 +23,26 @@ export class ContactComponent {
     },
     {
       title: "Minimata Nagar", address: "Minimata Nagar, Near Janki Nagar, Nagpur, Maharashtra", phone: "+91 9890388706, +91 9922032829", contact: [
-        { name: "Nilesh Sir", phone: "+91 9890388706" },
-        { name: "Murtaza Sir", phone: "+91 9922032829" },
+        { name: "Ashish Sir", phone: "+91 9890388706" },
+        { name: "Ankit Sir", phone: "+91 9922032829" },
       ]
     },
     {
       title: "Pardi", address: "Rarokar Area, Bazar Chowk, Bhandewadi Road, Pardi, Nagpur, Maharashtra", phone: "+91 9372016215, +91 9145099632", contact: [
-        { name: "Nilesh Sir", phone: "+91 9372016215" },
-        { name: "Murtaza Sir", phone: "+91 9145099632" },
+        { name: "Deepak Sir", phone: "+91 9372016215" },
+        { name: "Sudhir Sir", phone: "+91 9145099632" },
       ]
     },
     {
       title: "Netaji Nagar", address: "Above Alpha Computers, Netaji Nagar, Nagpur, Maharashtra", phone: "+91 9922032829, +91 9372016215", contact: [
-        { name: "Nilesh Sir", phone: "+91 9922032829" },
-        { name: "Murtaza Sir", phone: "+91 9372016215" },
+        { name: "Ankit Sir", phone: "+91 9922032829" },
+        { name: "Deepak Sir", phone: "+91 9372016215" },
       ]
     },
     {
       title: "Nara", address: "Near Nara Bus stop, Nara, Nagpur, Maharashtra", phone: "+91 9822938157, +91 8055284739", contact: [
-        { name: "Nilesh Sir", phone: "+91 9822938157" },
-        { name: "Murtaza Sir", phone: "+91 8055284739" },
+        { name: "Simant Sir", phone: "+91 9822938157" },
+        { name: "Manish Sir", phone: "+91 8055284739" },
       ]
     },
   ]
